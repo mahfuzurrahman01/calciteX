@@ -4,7 +4,7 @@ import Navbar from './Component/Navbar';
 
 function App() {
   return (
-    <div>
+    <div onScroll={Home}>
       <Navbar></Navbar>
       <Home></Home>
     </div>

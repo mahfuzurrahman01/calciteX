@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import logo from '../assets/logo/Black And White Rakia Design Studio Logo.png'
 import { HiOutlineBars3BottomRight, HiOutlineXMark } from 'react-icons/hi2'
 const Navbar = () => {
-    const [openToggle, setOpenToggle] = useState(false)
+    const [openToggle, setOpenToggle] = useState(true)
     return (
         <div >
             <header className="p-4  bg-white shadow-lg shadow-gray-200   duration-300 relative ">
@@ -10,7 +10,7 @@ const Navbar = () => {
                     <a rel="noopener noreferrer" href="# " aria-label="Back to homepage" className="flex items-center p-2">
                        <img src={logo} alt="" className='lg:w-48 w-32 '/>
                     </a>
-                    <ul className="items-stretch hidden space-x-3 md:flex">
+                    <ul className="items-stretch  space-x-3  lg:flex hidden">
                         <li className="flex">
                             <a rel="noopener noreferrer" href="# " className="flex items-center px-4 text-gray-900 hover:text-blue-600 text-xl font-semibold -mb-1 border-b-2  border-transparent">Home</a>
                         </li>
