@@ -6,9 +6,9 @@ const Navbar = () => {
     return (
         <div >
             <header className="p-4  bg-white shadow-lg shadow-gray-200   duration-300 relative ">
-                <div className="lg:w-11/12 w-full flex justify-between h-20 mx-auto">
+                <div className="lg:w-11/12 w-full flex justify-between h-16 mx-auto">
                     <a rel="noopener noreferrer" href="# " aria-label="Back to homepage" className="flex items-center p-2">
-                       <img src={logo} alt="" className='w-48 '/>
+                       <img src={logo} alt="" className='lg:w-48 w-32 '/>
                     </a>
                     <ul className="items-stretch hidden space-x-3 md:flex">
                         <li className="flex">
@@ -36,14 +36,14 @@ const Navbar = () => {
                             </button>
                         }
                     </div>
-                </div>
-                <div className={ openToggle ? 'bg-gray-50 w-full lg:hidden block absolute duration-300 ease-linear translate-x-[-200%]  left-0 right-0 ':'bg-gray-50  lg:hidden block w-full absolute left-0 right-0 translate-x-0 ease-linear duration-300'}>
+                </div> 
+                <div className={ openToggle ? 'bg-gray-50 w-full lg:hidden block absolute duration-300  ease-linear translate-y-[-200%]  left-0 right-0 ':'bg-gray-50  lg:hidden block w-full absolute left-0 right-0 translate-y-0  ease-linear duration-300'}>
                     <ul className='p-5 '>
-                        <li className='hover:text-white bg-gray-200 py-1 px-2 shadow-lg shadow-gray-300 mt-1 rounded-lg hover:bg-blue-500'>Home</li>
-                        <li className='hover:text-white bg-gray-200 py-1 px-2 shadow-lg shadow-gray-300 mt-1 rounded-lg hover:bg-blue-500'>About us</li>
-                        <li className='hover:text-white bg-gray-200 py-1 px-2 shadow-lg shadow-gray-300 mt-1 rounded-lg hover:bg-blue-500'>Products</li>
-                        <li className='hover:text-white bg-gray-200 py-1 px-2 shadow-lg shadow-gray-300 mt-1 rounded-lg hover:bg-blue-500'>FAQ</li>
-                        <li className='hover:text-white bg-gray-200 py-1 px-2 shadow-lg shadow-gray-300 mt-1 rounded-lg hover:bg-blue-500'>Contact us</li>
+                        <li className='hover:text-white bg-gray-100 py-2 px-2 shadow-lg  mt-2 rounded hover:bg-blue-500'>Home</li>
+                        <li className='hover:text-white bg-gray-100 py-2 px-2 shadow-lg  mt-2 rounded hover:bg-blue-500'>About us</li>
+                        <li className='hover:text-white bg-gray-100 py-2 px-2 shadow-lg  mt-2 rounded hover:bg-blue-500'>Products</li>
+                        <li className='hover:text-white bg-gray-100 py-2 px-2 shadow-lg  mt-2 rounded hover:bg-blue-500'>FAQ</li>
+                        <li className='hover:text-white bg-gray-100 py-2 px-2 shadow-lg  mt-2 rounded hover:bg-blue-500'>Contact us</li>
                     </ul>
                 </div>
             </header>
