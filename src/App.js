@@ -1,12 +1,15 @@
+import { RouterProvider } from 'react-router-dom';
 import './App.css';
-import Home from './Component/Home';
-import Navbar from './Component/Navbar';
+import { router } from './Roter/Route';
+import { AnimatePresence } from 'framer-motion';
 
 function App() {
   return (
-    <div onScroll={Home}>
-      <Navbar></Navbar>
-      <Home></Home>
+    <div>
+      <AnimatePresence initial={true} mode={"wait"}>
+        <RouterProvider router={router}></RouterProvider>
+      </AnimatePresence>
+
     </div>
   );
 }
